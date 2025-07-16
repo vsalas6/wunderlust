@@ -194,19 +194,68 @@
         <h2>Contact Us</h2>
         <form action="#" method="post">
           <!-- First Name -->
-          <label for="first-name">First Name</label>
+          <label for="first-name">First Name<span class="required">*</span></label>
           <input id="first-name" name="first-name" type="text" placeholder="Enter your first name" required>
 
           <!-- Last Name -->
+           <label for="last-name">Last Name<span class="required">*</span></label>
+           <input id="last-name" name="last-name" type="text" placeholder="Enter your last name">
+
           <!-- Contact Method (Email, Text, Phone) -->
+          <fieldset>
+            <legend>Preferred Contact Method<span class="required">*</span></legend>
+            <!-- preferred contact (email) -->
+            <input type="radio" id="contact-email" name="method" value="email" checked>
+            <label for="contact-email">Email</label>
+
+            <!-- preferred contact (text) -->
+            <input type="radio" id="contact-text" name="method" value="text">
+            <label for="contact-text">Text</label>
+
+            <!-- preferred contact (phone) -->
+            <input type="radio" id="contact-phone" name="method" value="phone">
+            <label for="contact-phone">Phone</label>
+          </fieldset>
+
           <!-- Email Address (Enter Email) -->
+          <label for="email">Email<span class="required">*</span></label>
+          <input id="email" name="email" type="email" placeholder="Enter your email">
+
           <!-- Phone Number (Enter telephone number) -->
+          <label for="phone">Phone Number<span class="required">*</span></label>
+          <input id="phone" name="phone" type="tel" placeholder="Enter your telephone number">
+
           <!-- Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia) -->
+          <label for="destination">Destination</label>
+          <select name="destination" id="destination">
+            <option value="">Choose one</option>
+            <option value="bcn">Barcelona</option>
+            <option value="gd">Granada</option>
+            <option value="ibz">Ibiza</option>
+            <option value="mad">Madrid</option>
+            <option value="pmi">Majorca</option>
+            <option value="svq">Seville</option>
+            <option value="tf">Tenerife</option>
+            <option value="val">Valencia</option>
+          </select>
+
           <!-- Travel Time (Fall, Winter, Spring, Summer, Flexible) -->
+          <label for="season">Travel Time</label>
+          <select name="season" id="season">
+            <option value="">Choose one</option>
+            <option value="fall">Fall</option>
+            <option value="winter">Winter</option>
+            <option value="spring">Spring</option>
+            <option value="summer">Summer</option>
+            <option value="flexible">Flexible</option>
+          </select>
+
+          <input type="submit" value="Submit">
         </form>
       </section>
     </main>
     <footer>
+    <!-- TODO: Complete the footer -->
       
     </footer>
   </body>
