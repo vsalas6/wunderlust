@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <!--Add the language of the page -->
 <html lang="en">
-    <!--information to browsers and search engines -->
     <head>
-    <!--Add all required tags in the head here - meta tags for SEO, responsiveness, and with info about the page, etc., in addition to tags to create a card on Twitter with a large image and open graph tags to allow for sharing on other social media sites-->
-        <!-- META -->
         <!--character encoding-->
         <meta charset="UTF-8">
 
@@ -17,64 +14,19 @@
         <!-- Accurate description about the content 140-160 characters to display on search engines -->
         <meta name="description" content="Wunderlust Travel helps you plan an aspiring trip to any destination you aspire to visit. Explore various destinations across different areas.">
 
-        <!-- Summarize the main topic, avoid "keyword stuffing" -->
-        <meta name="keywords" content="Wunderlust, travel, plan, trip, food, eat, destination, things to do, Barcelona, Granada, Ibiza, Madrid, Seville, Tenerife, Valencia">
-
-        <!--Help web crawlers index and display your page -->
-        <meta name="robots" content="index, follow">
-
-        <!--OPEN GRAPH/SOCIAL MEDIA META TAGS-->
-        <!-- For Twitter -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@wunderlusttravel">
-        <meta name="twitter:creator" content="@viviansalas">
-        <meta name="twitter:title" content="Wunderlust Travel">
-        <meta name="twitter:description" content="Plan your vacation to various places with Wunderlust Travel. Explore beautiful places to visit.">
-        <meta name="twitter:image" content="images/majorca-beach-S.png">
-
-        <!-- Open Graph -->
-        <meta property="og:title" content="Wunderlust Travel">
-        <meta property="og:description" content="Plan your vacation to various places with Wunderlust Travel">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.wunderlusttravel.com">
-        <meta property="og:image" content="images/majorca-beach-S.png">
-
-        <!-- Links -->
-        <!-- To stylesheets and scripts, custom styles should always be last in order -->
-        <link rel="stylesheet" href="styles.css">
-
-        <!-- Firefox, Chrome, Safari, IE 11+, Edge, and Opera. 196x196 pixels in size. -->
-        <link rel="icon" href="favicon.ico" sizes="196x196" type="image/x-icon">
-
-        <!--tells the search engine this is the permalink -->
-        <link rel="canonical" href="https://www.wunderlusttravel.com">
-
-        <!--Tells the browser to display this rather than the current page URL -->
-        <base href="https://www.wunderlusttravel.com">
-
-        <!-- Tells the browser and search engine there are multiple languages of this page available-->
-        <link rel="alternate" hreflang="es" href="https://es.wunderlust.com">
-        <link rel="alternate" hreflang="fr" href="https://fr.wunderlust.com">
-        <link rel="alternate" hreflang="de" href="https://de.wunderlust.com">
-        <link rel="alternate" hreflang="x-default" href="https://www.wunderlust.com">
-
-        <!-- Gives credit to the author -->
-        <link rel="author" href="https://plus.google.com/+ExampleProfile">
-
-        <!-- license or authorizations for the page-->
-	    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
-
-
         <!-- TITLE -->
         <!--title of the page content displayed on search engines-->
         <title>Wunderlust Travel</title>
     </head>
     <body>
-    <!--Review the document and add the proper tags to all of the headings  throughout. Use the outline feature in the validator to ensure that these have been added correctly. See the image of the correct outline as a reference if you have questions 
-    Also review the alt text on all of the images to ensure that it is descriptive and appropriate-->
+        <a href="#main" class="skip-link">Skip to main content</a>
         <header>
-            <img src="images/logo.png" alt="The Wunderlust logo shows blue waves and the outline of two palm trees against an orange sun">
             <h1>Wunderlust Travel</h1>
+            <picture>
+                <source media="(min-width: 1024px)" srcset="images/logo-L.png">
+                <source media="(min-width: 780px)" srcset="images/logo-M.png">
+                <img src="images/logo-S.png" alt="Wunderlust Travel logo">
+            </picture>
             <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
             <nav>
                 <h2>Main Navigation</h2>
@@ -86,13 +38,25 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="main">
             <article>  
                 <h2>Majorca</h2>
                 <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-                <img src="images/majorca-waves.png" alt="Turquoise blue waters with white wave caps crashing against a rock cliff">
-                <img src="images/majorca-beach.png" alt="Turquoise blue waters with white wave caps smoothly guiding along the cliffs and ending at shore">
-                <img src="images/majorca-cove.png" alt="Deep blue water leading to the horizon with the island and trees in the foreground">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/majorca-waves-L.png">
+                    <source media="(min-width: 780px)" srcset="images/majorca-waves-M.png">
+                    <img src="images/majorca-waves-S.png" alt="Turquoise blue waters with white wave caps crashing against a rock cliff">
+                </picture>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/majorca-beach-L.png">
+                    <source media="(min-width: 780px)" srcset="images/majorca-beach-M.png">
+                    <img src="images/majorca-beach-S.png" alt="Turquoise blue waters with white wave caps smoothly guiding along the cliffs and ending at shore">
+                </picture>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/majorca-cove-L.png">
+                    <source media="(min-width: 780px)" srcset="images/majorca-cove-M.png">
+                    <img src="images/majorca-cove-S.png" alt="Deep blue water leading to the horizon with the island and trees in the foreground">
+                </picture>
                 <section>
                     <h3>Plan Your Trip</h3>
                     <section>
@@ -127,26 +91,34 @@
                 <section>
                     <h3>Testimonials</h3>
                     <section>
-                        <img src="images/mirando-blake.png" alt="Miranda Blake has a blonde bob and is wearing dark sunglasses">
-                        <h4>Amanda Blake</h4>
+                        <h4>Miranda Blake</h4>
+                        <source media="(min-width: 1024px)" srcset="images/miranda-blake-L.png">
+                        <source media="(min-width: 780px)" srcset="images/miranda-blake-M.png">
+                        <img src="images/miranda-blake-S.png" alt="Miranda Blake has a blonde bob and is wearing dark sunglasses">
                         <p>Traveling From: London, England</p>
                         <q>I traveled here for business, but my stay was extended. Now it is my home.</q>
                     </section>
                     <section>
-                        <img src="images/max-winter.png" alt="Max Winter has brown short hair, a beard, and has a brown shirt on">
                         <h4>Max Winter</h4>
+                        <source media="(min-width: 1024px)" srcset="images/max-winter-L.png">
+                        <source media="(min-width: 780px)" srcset="images/max-winter-M.png">
+                        <img src="images/max-winter-S.png" alt="Max Winter has brown short hair, a beard, and has a brown shirt on">
                         <p>Traveling From: Berlin, Germany</p>
                         <q>Great escape from my reality. Beautiful sunsets, wonderful people, great beer.</q>
                     </section>
                     <section>
-                        <img src="images/ines-villegoes.png" alt="Ines Villegoes has brown long hair, is wearing a brown long sleeve shirt and is wearing a police cover over it">
-                        <h4>Inés Villegos</h4>
+                        <h4>Inés Villegoes</h4>
+                        <source media="(min-width: 1024px)" srcset="images/ines-villegoes-L.png">
+                        <source media="(min-width: 780px)" srcset="images/ines-villegoes-M.png">
+                        <img src="images/ines-villegoes-S.png" alt="Ines Villegoes has brown long hair, is wearing a brown long sleeve shirt and is wearing a police cover over it">
                         <p>Traveling From: Barcelona, Spain</p>
                         <q>A very safe environment for all travelers.</q>
                     </section>
                     <section>
-                        <img src="images/carmen-lorenzo.png" alt="Carmen Lorenzo has long, dark brown hair and is wearing gold hoop earrings">
                         <h4>Carmen Lorenzo</h4>
+                        <source media="(min-width: 1024px)" srcset="images/carmen-lorenzo-L.png">
+                        <source media="(min-width: 780px)" srcset="images/carmen-lorenzo-M.png">
+                        <img src="images/carmen-lorenzo-S.png" alt="Carmen Lorenzo has long, dark brown hair and is wearing gold hoop earrings">
                         <p>Traveling From: Madrid, Spain</p>
                         <q>Live, laugh, love-- everything you need in Majorca.</q>
                     </section>
@@ -154,24 +126,24 @@
                 <section>
                     <h3>About Your Destination</h3>
                     <section>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ruler-2" width="225" height="225" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 3l4 4l-14 14l-4 -4z" /><path d="M16 7l-1.5 -1.5" /><path d="M13 10l-1.5 -1.5" /><path d="M10 13l-1.5 -1.5" /><path d="M7 16l-1.5 -1.5" /></svg>
                         <h4>Size</h4>
-                        <p>1,405 miles squared</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ruler-2" width="225" height="225" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 3l4 4l-14 14l-4 -4z" /><path d="M16 7l-1.5 -1.5" /><path d="M13 10l-1.5 -1.5" /><path d="M10 13l-1.5 -1.5" /><path d="M7 16l-1.5 -1.5" /></svg>
+                        <p>Size: 1,405 miles squared</p>
                     </section>
                     <section>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-top-bar" width="225" height="225" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="12" y1="21" x2="12" y2="3" /><path d="M15 6l-3 -3l-3 3" /><line x1="9" y1="21" x2="15" y2="21" /></svg>
                         <h4>Elevation</h4>
-                        <p>4,741 feet</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-top-bar" width="225" height="225" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="12" y1="21" x2="12" y2="3" /><path d="M15 6l-3 -3l-3 3" /><line x1="9" y1="21" x2="15" y2="21" /></svg>
+                        <p>Elevation: 4,741 feet</p>
                     </section>
                     <section>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="225" height="225" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="11" r="3" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
                         <h4>Location</h4>
-                        <p>Mediterranean</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="225" height="225" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="11" r="3" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
+                        <p>Location: Mediterranean</p>
                     </section>
                     <section>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="225" height="225" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="9" cy="7" r="4" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>
                         <h4>Population</h4>
-                        <p>923,608</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="225" height="225" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="9" cy="7" r="4" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>
+                        <p>Population: 923,608</p>
                     </section>
                 </section>
                 <section>
