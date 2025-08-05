@@ -1,11 +1,11 @@
 /* Vivian Salas */
-@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
 
 /* CSS Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -66,4 +66,117 @@ table {
   /* font families */
   --font-body: 'Montserrat', sans-serif;
   --font-display: 'Molle', cursive;
+}
+
+/* Mobile First */
+#skip{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#menu-toggle{
+  position: relative;
+}
+
+#menu-toggle label{
+  display: block;
+  background-color: var(--yellow);
+  color: var(--white);
+  font-weight: bold;
+  text-align: center;
+  padding: 1em;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+#menu-toggle ul{
+  display: none;
+  flex-direction: column;
+  background-color: var(--teal);
+  font-family: var(--font-body);
+}
+
+#menu-toggle ul li{
+  border-top: 1px solid var(--black);
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+#menu-toggle ul li:first-child{
+  border-top: none;
+}
+
+#menu-toggle ul li a{
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+  display: block;
+}
+
+#menu-toggle input[type="checkbox"]{
+  display: none;
+}
+
+#menu-toggle input[type="checkbox"]:checked ~ ul{
+  display: flex;
+}
+
+header{
+  background: linear-gradient(to bottom, var(--teal), var(--white));
+  padding: 1em;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo img{
+  width: 200px;
+  height: auto;
+  margin-left: -45px;
+}
+
+h1{
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--black);
+  margin-top: 0.5em;
+  position: left;
+}
+
+header p{
+  font-size: 2rem;
+  color: var(--dk-gray);
+}
+
+body{
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: var(--white);
+  color: var(--dk-gray);
+}
+
+header, main{
+  padding: 2.5em;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 600px) {
+  
+}
+
+@media (min-width: 1024px) {
+  
 }
